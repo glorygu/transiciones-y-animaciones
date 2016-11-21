@@ -1,0 +1,103 @@
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.fade, .color, .grow, .shrink, .rotate
+{
+	background-color: #adad85; 
+	width: 50%;
+	height: 6em;
+	margin: 10px;
+}
+
+.fade
+{
+	opacity: 0.5;
+
+}
+
+.fade:hover 
+{
+	opacity: 1;
+}
+
+.color:hover
+{
+	background-color: #804000;
+}
+
+.grow: hover
+{
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+
+}
+.shrink:hover
+{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
+
+.rotate:hover
+{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+
+.exampletransitionb {
+width: 520px;
+}
+
+.ease, .linear, .easein, .easeout, .easeinout {
+
+	width: 100px;
+margin: 5px 0;
+padding: 5px;
+color: white;
+background-color: #ED8029;
+text-align: right;
+border-radius: 5px;
+}
+.exampletransitionb:hover div{
+
+	width: 500px;
+
+	}
+
+div.ease {
+-webkit-transition: 3s ease;
+-moz-transition: 3s ease;
+-o-transition: 3s ease;
+-ms-transition: 3s ease;
+transition: 3s ease;
+}
+div.linear {
+-webkit-transition: 3s linear;
+-moz-transition: 3s linear;
+-o-transition: 3s linear;
+-ms-transition: 3s linear;
+transition: 3s linear;
+}
+div.easein {
+-webkit-transition: 3s ease-in;
+-moz-transition: 3s ease-in;
+-o-transition: 3s ease-in;
+-ms-transition: 3s ease-in;
+transition: 3s ease-in;
+}
+div.easeout {
+-webkit-transition: 3s ease-out;
+-moz-transition: 3s ease-out;
+-o-transition: 3s ease-out;
+-ms-transition: 3s ease-out;
+transition: 3s ease-out;
+}
+#ExampleB div.easeinout {
+-webkit-transition: 3s ease-in-out;
+-moz-transition: 3s ease-in-out;
+-o-transition: 3s ease-in-out;
+-ms-transition: 3s ease-in-out;
+transition: 3s ease-in-out;
+}

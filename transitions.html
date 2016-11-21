@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8"/>
+	<title>Transiciones</title>
+	<link rel="stylesheet" type="text/css" href="style-transitions.css">
+
+</head>
+
+<body>
+	<h1>Transiciones</h1>
+	<section> 
+		Las transiciones de CSS permiten controlar la velocidad de cambio de animación al cambiar propiedades CSS. Los cambios de un estado a otro se dan a través del un período de tiempo. El intervalo de tiempo en que se da la transición es personalizable. 
+		Las transiciones permiten indicar: 
+		<ul> 
+			<li> transition-property: Las propiedades a animar </li>
+			<li> transition-delay: El momento en el que inicia la animación </li>
+			<li> transition-duration: El tiempo de duración de la animación </li>
+			<li> transition-timing-function: La manera en que se va a dar la transición de un estado a otro 
+				<ul>
+					<li> ease: efecto que empieza despacio, va más rápido y luego vuelve a ir despacio </li>
+					<li> linear: efecto que tiene la misma velocidad desde el inicio hasta el final </li>
+					<li> ease-in: efecto de transición que empieza despacio </li>
+					<li> ease-out: efecto de transición que termina despacio </li>
+					<li> ease-in-out: efecto de transición que comienza y termina despacio </li>
+
+			</li>
+			</ul>
+			<section>
+			<h4>Ejemplo</h4>
+						<div class="exampletransitionb">
+							<div class="ease">ease</div>
+							<div class="linear">linear</div>
+							<div class="easein">ease-in</div>
+							<div class="easeout">ease-out</div>
+							<div class="easeinout">ease-in-out</div>
+					</div>
+			</section>
+		<section>
+		<h2>Ejemplos de transiciones simples </h2>
+		<ul>
+			<li>
+				<div class="fade">	
+				<h3>Difuminado</h3>
+				El efecto de difuminado requiere la definición de un estado inicial y un cambio. 
+				</div>
+			</li>
+			<li> 
+				<div class="color">
+					<h3>Cambio de color </h3>
+					Al darse un cambio de estado se cambia el color. 
+				</div>
+			</li>
+			<li> 
+				<h3>Cambio de tamaño</h3>
+					Se cambia el ancho y alto del elemento para aumentar o reducir su tamaño.
+				<div class="grow">
+					 Aumenta tamaño.
+				</div>
+				<div class="shrink">
+					 Reduce tamaño.
+				</div>
+			</li>
+			<li> 
+				
+				<div class="rotate">
+					<h3>Rotar elemento</h3>
+				</div>
+			</li>
+
+
+
+
+		</ul> 
+		</section>
+	</section>
+	
+
+	<section> Referencias:
+	http://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/
+
+	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+
+	http://www.css3.info/preview/css3-transitions/
+	</section>
+</body>
+</html>
