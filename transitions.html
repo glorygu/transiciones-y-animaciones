@@ -4,63 +4,253 @@
 	<meta charset="utf-8"/>
 	<title>Transiciones</title>
 	<link rel="stylesheet" type="text/css" href="style-transitions.css">
-
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 	<section class="header">
+	<ul id="header" class="menu" style="top: 60%;">
+			<li class="menu-item"><a href="index.html" class="active"> Inicio </a></li>
+			<li class="menu-item"><a href="transitions.html" class="active"> Transiciones </a></li>
+			<li class="menu-item">
+			<a href="animations.html" class="active"> Animaciones </a></li>
+			<li class="menu-item">
+			<a href="website-examples.html" class="active"> Ejemplos </a></li>
+			<li class="menu-item"><a href="exercises.html" class="active"> Ejercicios </a></li>
+			<div class="close"></div>
+		</ul> 
 	<h1>Transiciones</h1>
 	</section>
 	<section  class="content"> 
 		Las transiciones de CSS permiten controlar la velocidad de cambio de animación al cambiar propiedades CSS. Los cambios de un estado a otro se dan a través del un período de tiempo. El intervalo de tiempo en que se da la transición es personalizable. 
 		<h4>Ejemplo</h4>
-		<div class="wrap-prop">
-		  <div class="container-prop">
-		    <h5>Sin transición</p>
-		    <div class="box1-prop box-prop"></div>
-		  </div>
-		   <div class="container-prop">
-		    <h5>Con transición</p>
-		    <div class="box2-prop box-prop"></div>
-		  </div>
-		</div>
+		<table> 
+			<tr>
+				<td>
+				Código html 
+				<xmp>
+<div class="wrap-prop">
+  <div class="container-prop">
+	<h5>Sin transición</p>
+	<div class="box1-prop box-prop"></div>
+  </div>
+   <div class="container-prop">
+	<h5>Con transición</p>
+	<div class="box2-prop box-prop"></div>
+  </div>
+</div>
+				
+				</xmp>
+				</td>
+				<td>
+				Código css
+				<xmp>
 
+.wrap-prop {
+  margin: 50px;
+}
+
+.container-prop {
+  display: inline-block;
+  width: 300px;
+}
+
+h5 {
+  color: lightgray;
+  font-family: lato;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box-prop {
+  border-radius: 5px;
+  height: 40px;
+  margin: 50px auto;
+  width: 80px;
+}
+.wrap-prop:hover .box-prop {
+  transform: scale(2);
+}
+
+.box1-prop {
+  background: mediumturquoise;
+}
+
+.box2-prop {
+  background: #2b3f53;
+  transition: all 1s;
+}
+					</xmp>
+				</td>
+				<td>
+					<div class="wrap-prop">
+					  <div class="container-prop">
+						<h5>Sin transición</p>
+						<div class="box1-prop box-prop"></div>
+					  </div>
+					   <div class="container-prop">
+						<h5>Con transición</p>
+						<div class="box2-prop box-prop"></div>
+					  </div>
+					</div>
+				</td>
+			</tr>
+		</table>
 		Las transiciones permiten indicar: 
 		<ul> 
-			<li> transition-property: Las propiedades a animar </li>
-			<li> transition-delay: El momento en el que inicia la animación 
+			<li> <h3>transition-property:</h3> Las propiedades a animar </li>
+			<li> <h3>transition-delay:</h3> El momento en el que inicia la animación 
+			<table>
+			<tr>
+			<td>
 			<h4>Ejemplo</h4>
+			Código html
+			 <xmp>
+<div class="container-delay">
+  <div class="box1-delay box-delay"></div>
+  <div class="box2-delay box-delay"></div>
+  <div class="box3-delay box-delay"></div>
+</div>
+			 </xmp>
+			 </td>
+				<td>
+			Código css
+			<xmp>container-delay {
+  margin: 100px;
+}
+
+.box-delay {
+  background: steelblue;
+  border-radius: 5px;
+  display: inline-block;
+  height: 80px;
+  margin: 20px;
+  width: 80px;
+}
+.container-delay:hover .box-delay {
+  transform: scale(1.4);
+}
+
+.box1-delay {
+  transition: all 1.3s;
+}
+
+.box2-delay {
+  transition: all 1.3s 0.5s;
+}
+
+.box3-delay {
+  transition: all 1.3s 1s;
+}</xmp>
+			
+			</td>
+			<td>
 			<div class="container-delay">
 			  <div class="box1-delay box-delay"></div>
 			  <div class="box2-delay box-delay"></div>
 			  <div class="box3-delay box-delay"></div>
 			</div>
+			</td>
+			</tr>
+			</table>
 
 
 			</li>
 
-			<li> transition-duration: El tiempo de duración de la animación
+			<li> <h3>transition-duration:</h3> El tiempo de duración de la animación
 				<h4>Ejemplo</h4>
+				<table> <tr> <td>
+				Código html
+				<xmp>
+<div class="wrap-duration">
+  <div class="container-duration">
+	<h5>300ms</p>
+	<div class="box1 box"></div>
+  </div>
+   <div class="container-duration">
+	<h5>1s</p>
+	<div class="box2 box"></div>
+  </div>
+   <div class="container-duration">
+	<h5>3s</p>
+	<div class="box3 box"></div>
+  </div>
+</div>
+				</xmp>
+				</td>
+				<td>
+				Código CSS 
+				<xmp>
+.wrap-duration {
+  margin: 50px;
+}
+
+.container-duration {
+  display: inline-block;
+  width: 150px;
+}
+
+h5 {
+  color: lightgray;
+  font-family: lato;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+}
+
+.box {
+  border-radius: 50%;
+  height: 40px;
+  margin: 50px auto;
+  width: 40px;
+}
+.wrap-duration:hover .box {
+  transform: scale(2);
+}
+
+.box1 {
+  background: #60D4C8;
+  transition: all 300ms;
+}
+
+.box2 {
+  background: #46BAAF;
+  transition: all 1s;
+}
+
+.box3 {
+  background: #3EA69B;
+  transition: all 3s;
+}
+</xmp>
+</td>
+				<td>
 				<div class="wrap-duration">
 				  <div class="container-duration">
-				    <h5>300ms</p>
-				    <div class="box1 box"></div>
+					<h5>300ms</p>
+					<div class="box1 box"></div>
 				  </div>
 				   <div class="container-duration">
-				    <h5>1s</p>
-				    <div class="box2 box"></div>
+					<h5>1s</p>
+					<div class="box2 box"></div>
 				  </div>
 				   <div class="container-duration">
-				    <h5>3s</p>
-				    <div class="box3 box"></div>
+					<h5>3s</p>
+					<div class="box3 box"></div>
 				  </div>
 				</div>
-
+				</td>
+			</tr>
+			</table>
 
 
 
 			 </li>
-			<li> transition-timing-function: La manera en que se va a dar la transición de un estado a otro 
+			<li> <h3>transition-timing-function</h3>: La manera en que se va a dar la transición de un estado a otro 
 				<ul>
 					<li> ease: efecto que empieza despacio, va más rápido y luego vuelve a ir despacio </li>
 					<li> linear: efecto que tiene la misma velocidad desde el inicio hasta el final </li>
@@ -68,14 +258,79 @@
 					<li> ease-out: efecto de transición que termina despacio </li>
 					<li> ease-in-out: efecto de transición que comienza y termina despacio </li>
 					<section>
-					<h4>Ejemplo</h4>
+					<h4>Ejemplo</h4></br>
+					<table>
+					<tr>
+					<td>
+						Código html
+						<xmp>
+<div class="exampletransitionb">
+	<div class="ease">ease</div>
+	<div class="linear">linear</div>
+	<div class="easein">ease-in</div>
+	<div class="easeout">ease-out</div>
+	<div class="easeinout">ease-in-out</div>
+</div>
+						</xmp>
+						
+					</td>
+					<td> Código CSS
+					<xmp>
+.exampletransitionb:hover div{
+
+width: 500px;
+
+}
+
+div.ease {
+-webkit-transition: 3s ease;
+-moz-transition: 3s ease;
+-o-transition: 3s ease;
+-ms-transition: 3s ease;
+transition: 3s ease;
+}
+div.linear {
+-webkit-transition: 3s linear;
+-moz-transition: 3s linear;
+-o-transition: 3s linear;
+-ms-transition: 3s linear;
+transition: 3s linear;
+}
+div.easein {
+-webkit-transition: 3s ease-in;
+-moz-transition: 3s ease-in;
+-o-transition: 3s ease-in;
+-ms-transition: 3s ease-in;
+transition: 3s ease-in;
+}
+div.easeout {
+-webkit-transition: 3s ease-out;
+-moz-transition: 3s ease-out;
+-o-transition: 3s ease-out;
+-ms-transition: 3s ease-out;
+transition: 3s ease-out;
+}
+div.easeinout {
+-webkit-transition: 3s ease-in-out;
+-moz-transition: 3s ease-in-out;
+-o-transition: 3s ease-in-out;
+-ms-transition: 3s ease-in-out;
+transition: 3s ease-in-out;
+}						</xmp>
+						</td>
+						<td>
+						
 						<div class="exampletransitionb">
 							<div class="ease">ease</div>
 							<div class="linear">linear</div>
 							<div class="easein">ease-in</div>
 							<div class="easeout">ease-out</div>
 							<div class="easeinout">ease-in-out</div>
-					</div>
+						</div>
+						</td>
+						</tr>
+						</table>
+						
 			</section>
 			</li>
 			</ul>
@@ -83,20 +338,112 @@
 		<section>
 		<h2>Ejemplos de transiciones simples </h2>
 		<ul>
-			<li>
+			<li> <h3>Difuminado</h3>
+			<table>
+			<tr>
+				<td>
+					Código html
+					<xmp>
+<div class="fade">	
+<h3>Difuminado</h3>
+El efecto de difuminado requiere la definición de un estado inicial y un cambio. 
+</div>
+					</xmp>
+				</td>
+				<td>
+					Código CSS
+					<xmp>
+.fade
+{
+	opacity: 0.5;
+
+}
+
+.fade:hover 
+{
+	opacity: 1;
+}
+					</xmp>
+				</td>
+				<td>
 				<div class="fade">	
 				<h3>Difuminado</h3>
 				El efecto de difuminado requiere la definición de un estado inicial y un cambio. 
 				</div>
+				</td>
+			</tr>
+		<table>
+				
+			</li>
+			<li>  <h3> Cambio de color </h3>
+				<table>
+				<tr>
+					<td>
+						Código html
+						<xmp>
+<div class="color">
+<h3>Cambio de color </h3>
+Al darse un cambio de estado se cambia el color. 
+</div>
+						</xmp>
+					</td>
+					<td>
+						Código CSS
+						<xmp>
+.color:hover
+{
+	background-color: #3EA69B;
+}
+
+						</xmp>
+					</td>
+					<td>
+					<div class="color">
+						<h3>Cambio de color </h3>
+						Al darse un cambio de estado se cambia el color. 
+					</div>
+					</td>
+				</tr>
+			<table>
+				
 			</li>
 			<li> 
-				<div class="color">
-					<h3>Cambio de color </h3>
-					Al darse un cambio de estado se cambia el color. 
-				</div>
-			</li>
-			<li> 
-				<h3>Cambio de tamaño</h3>
+			<h3> Cambio de tamaño</h3>
+			<table>
+				<tr>
+					<td>
+						Código html
+						<xmp>
+<h3>Cambio de tamaño</h3>
+Se cambia el ancho y alto del elemento para aumentar o reducir su tamaño.
+<div class="grow">
+Aumenta tamaño.
+</div>
+<div class="shrink">
+Reduce tamaño.
+</div>
+						</xmp>
+					</td>
+					<td>
+						Código CSS
+						<xmp>
+.grow:hover
+{
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+
+}
+.shrink:hover
+{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
+						</xmp>
+					</td>
+					<td>
+					<h3>Cambio de tamaño</h3>
 					Se cambia el ancho y alto del elemento para aumentar o reducir su tamaño.
 				<div class="grow">
 					 Aumenta tamaño.
@@ -104,12 +451,41 @@
 				<div class="shrink">
 					 Reduce tamaño.
 				</div>
-			</li>
-			<li> 
+					</td>
+				</tr>
+			<table>
 				
-				<div class="rotate">
-					<h3>Rotar elemento</h3>
-				</div>
+			</li>
+			<li> <h3> Rotar elemento </h3>
+				<table>
+					<tr>
+						<td>
+							Código html
+							<xmp>
+<div class="rotate">
+<h3>Rotar elemento</h3>
+</div>
+							</xmp>
+						</td>
+						<td>
+							Código CSS
+							<xmp>
+.rotate:hover
+{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+							</xmp>
+						</td>
+						<td>
+						<div class="rotate">
+							<h3>Rotar elemento</h3>
+						</div>
+						</td>
+					</tr>
+				<table>
+				
 			</li>
 
 
@@ -121,13 +497,14 @@
 	
 
 	<section> Referencias:
+	<ul> <li>
 	http://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/
-
-	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
-
-	http://www.css3.info/preview/css3-transitions/
-
-	https://robots.thoughtbot.com/transitions-and-transforms
+	</li>
+	<li>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+</li>
+	<li>http://www.css3.info/preview/css3-transitions/
+</li>
+	<li>https://robots.thoughtbot.com/transitions-and-transforms</li>
 	</section>
 </body>
 </html>
