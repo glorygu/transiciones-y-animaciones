@@ -8,14 +8,58 @@
 </head>
 
 <body>
+	<section class="header">
 	<h1>Transiciones</h1>
-	<section> 
+	</section>
+	<section  class="content"> 
 		Las transiciones de CSS permiten controlar la velocidad de cambio de animación al cambiar propiedades CSS. Los cambios de un estado a otro se dan a través del un período de tiempo. El intervalo de tiempo en que se da la transición es personalizable. 
+		<h4>Ejemplo</h4>
+		<div class="wrap-prop">
+		  <div class="container-prop">
+		    <h5>Sin transición</p>
+		    <div class="box1-prop box-prop"></div>
+		  </div>
+		   <div class="container-prop">
+		    <h5>Con transición</p>
+		    <div class="box2-prop box-prop"></div>
+		  </div>
+		</div>
+
 		Las transiciones permiten indicar: 
 		<ul> 
 			<li> transition-property: Las propiedades a animar </li>
-			<li> transition-delay: El momento en el que inicia la animación </li>
-			<li> transition-duration: El tiempo de duración de la animación </li>
+			<li> transition-delay: El momento en el que inicia la animación 
+			<h4>Ejemplo</h4>
+			<div class="container-delay">
+			  <div class="box1-delay box-delay"></div>
+			  <div class="box2-delay box-delay"></div>
+			  <div class="box3-delay box-delay"></div>
+			</div>
+
+
+			</li>
+
+			<li> transition-duration: El tiempo de duración de la animación
+				<h4>Ejemplo</h4>
+				<div class="wrap-duration">
+				  <div class="container-duration">
+				    <h5>300ms</p>
+				    <div class="box1 box"></div>
+				  </div>
+				   <div class="container-duration">
+				    <h5>1s</p>
+				    <div class="box2 box"></div>
+				  </div>
+				   <div class="container-duration">
+				    <h5>3s</p>
+				    <div class="box3 box"></div>
+				  </div>
+				</div>
+
+
+
+
+			 </li>
 			<li> transition-timing-function: La manera en que se va a dar la transición de un estado a otro 
 				<ul>
 					<li> ease: efecto que empieza despacio, va más rápido y luego vuelve a ir despacio </li>
@@ -23,11 +67,8 @@
 					<li> ease-in: efecto de transición que empieza despacio </li>
 					<li> ease-out: efecto de transición que termina despacio </li>
 					<li> ease-in-out: efecto de transición que comienza y termina despacio </li>
-
-			</li>
-			</ul>
-			<section>
-			<h4>Ejemplo</h4>
+					<section>
+					<h4>Ejemplo</h4>
 						<div class="exampletransitionb">
 							<div class="ease">ease</div>
 							<div class="linear">linear</div>
@@ -36,6 +77,9 @@
 							<div class="easeinout">ease-in-out</div>
 					</div>
 			</section>
+			</li>
+			</ul>
+			
 		<section>
 		<h2>Ejemplos de transiciones simples </h2>
 		<ul>
@@ -82,6 +126,8 @@
 	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
 
 	http://www.css3.info/preview/css3-transitions/
+
+	https://robots.thoughtbot.com/transitions-and-transforms
 	</section>
 </body>
 </html>

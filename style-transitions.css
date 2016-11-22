@@ -1,12 +1,19 @@
 body{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color:  #ebebe0; 
+}
+.header{
+	 text-align: center
 }
 .fade, .color, .grow, .shrink, .rotate
 {
-	background-color: #adad85; 
+	background-color: #60D4C8; 
 	width: 50%;
 	height: 6em;
 	margin: 10px;
+	color: white;
+	font-style: bold;
+
 }
 
 .fade
@@ -22,10 +29,10 @@ body{
 
 .color:hover
 {
-	background-color: #804000;
+	background-color: #3EA69B;
 }
 
-.grow: hover
+.grow:hover
 {
 	-webkit-transform: scale(1.5);
 	-ms-transform: scale(1.5);
@@ -56,7 +63,7 @@ width: 520px;
 margin: 5px 0;
 padding: 5px;
 color: white;
-background-color: #ED8029;
+background-color: mediumturquoise;
 text-align: right;
 border-radius: 5px;
 }
@@ -94,10 +101,118 @@ div.easeout {
 -ms-transition: 3s ease-out;
 transition: 3s ease-out;
 }
-#ExampleB div.easeinout {
+div.easeinout {
 -webkit-transition: 3s ease-in-out;
 -moz-transition: 3s ease-in-out;
 -o-transition: 3s ease-in-out;
 -ms-transition: 3s ease-in-out;
 transition: 3s ease-in-out;
 }
+	.wrap-duration {
+  margin: 50px;
+}
+
+.container-duration {
+  display: inline-block;
+  width: 150px;
+}
+
+h5 {
+  color: lightgray;
+  font-family: lato;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+}
+
+.box {
+  border-radius: 50%;
+  height: 40px;
+  margin: 50px auto;
+  width: 40px;
+}
+.wrap-duration:hover .box {
+  transform: scale(2);
+}
+
+.box1 {
+  background: #60D4C8;
+  transition: all 300ms;
+}
+
+.box2 {
+  background: #46BAAF;
+  transition: all 1s;
+}
+
+.box3 {
+  background: #3EA69B;
+  transition: all 3s;
+}
+.wrap-prop {
+  margin: 50px;
+}
+
+.container-prop {
+  display: inline-block;
+  width: 300px;
+}
+
+h5 {
+  color: lightgray;
+  font-family: lato;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box-prop {
+  border-radius: 5px;
+  height: 40px;
+  margin: 50px auto;
+  width: 80px;
+}
+.wrap-prop:hover .box-prop {
+  transform: scale(2);
+}
+
+.box1-prop {
+  background: mediumturquoise;
+}
+
+.box2-prop {
+  background: #2b3f53;
+  transition: all 1s;
+}
+
+container-delay {
+  margin: 100px;
+}
+
+.box-delay {
+  background: steelblue;
+  border-radius: 5px;
+  display: inline-block;
+  height: 80px;
+  margin: 20px;
+  width: 80px;
+}
+.container-delay:hover .box-delay {
+  transform: scale(1.4);
+}
+
+.box1-delay {
+  transition: all 1.3s;
+}
+
+.box2-delay {
+  transition: all 1.3s 0.5s;
+}
+
+.box3-delay {
+  transition: all 1.3s 1s;
+}
+	
