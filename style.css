@@ -170,6 +170,21 @@ body{
 	animation-iteration-count: 3;
 }
 
+.timing_animation{
+	margin-left: 14em;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+	animation-name: bounce;
+    animation-duration: 4s;
+	animation-iteration-count: 3;
+}
+
+
+
+
+
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
@@ -192,6 +207,38 @@ body{
     width: 300px;
     height: 300px;
 }
+
+
+@keyframes bounce {
+
+  from {
+    top: 100px;
+    animation-timing-function: ease-out;
+  }
+
+  25% {
+    top: 50px;
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    top: 100px;
+    animation-timing-function: ease-out;
+  }
+
+  75% {
+    top: 75px;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    top: 100px;
+  }
+
+}
+
+
+
 
 @keyframes animated_div{
 0% {
