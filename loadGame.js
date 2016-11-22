@@ -123,6 +123,7 @@ function addPlayer( ){
 	var dimensions = getOffset(document.getElementById("wrap"));
 	//var player = document.createElement('img');
 	player.src = 'player.png';
+	player.setAttribute("id", "player1");
 	player.setAttribute("height",imgHeight);
     player.setAttribute("width",imgWidth);
 	player.style.top = (dimensions.top) + 'px';
@@ -131,6 +132,14 @@ function addPlayer( ){
 	
 }
 
+function animateMovePlayerRight(){
+	
+	player.style.transform = "translateX("+imgWidth+")";
+	player.style.transitionDuration = "1s";
+	//document.getElementById("player1").style.transitionDelay = "1s";
+
+
+}
 
 function movePlayerRight(){
 	var tmp = player.style.left;
@@ -147,9 +156,10 @@ function movePlayerLeft(){
 	player.style.left = (parseInt(left)-imgWidth)+ 'px'; 
 	console.log(player.style.left);
 }
- 
+
 // Initializes the game when the document is loaded
 //window.addEventListener('load', loadGame, false);
 //loadGame();
 createRow();
 addPlayer();
+animateMovePlayerRight();
